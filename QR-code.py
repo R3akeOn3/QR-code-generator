@@ -3,7 +3,7 @@ from PIL import Image
 
 data = input("QR code link: ")
 filename  = input("Filename(default: qr_128x128): ")
-qrsize = input("size for your qr code: ")
+qrsize = int(input("size for your qr code: "))
 
 qr = qrcode.QRCode(
     version=1,
