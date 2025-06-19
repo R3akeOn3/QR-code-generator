@@ -16,6 +16,6 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white").convert('RGB')
 img = img.resize((qrsize, qrsize), Image.NEAREST)
 
-template = (filename or "qr_128x128") + ".png"
+template = (filename or "qr_code") + ".png"
 img.save(template)
 print("Created your QR code as: ", template)
